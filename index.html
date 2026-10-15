@@ -9,24 +9,39 @@
     <h1>Welcome to my own website</h1>
     <p>Hello World! </p>
     <br>
+    <a href = "https://www.google.com">
+        <img src  ="GWEH.jpeg" alt = "ini foto davis" title = "Davis`s Picture" width="25%">
+    </a>
+        
     <p> Nama saya <b>Davis</b> <br> dari <u><i>teknik informatiika</i></u></p>
     <button> Kenalan yuk! </button>
     <hr>
 
-    <h3> Riwayat Pendidikan </h3>
+    <h2>Daftar Isi</h2>
+    <ul type = "circle">
+        <li><a href = "#riwayat"> Riwayat Pendidikan </a></li>
+        <li><a href = "#Softskill"> Soft Skills </a></li>
+        <li><a href = "#defSoft"> Definisi Soft Skills</a></li>
+        <li><a href = "#Sos">Social Media</a></li>
+        <li><a href = "#organisasi">Organisasi & Kepanitiaan</a></li>
+        <li><a href = "#masukkan">Ada masukkan?</a></li>
+    </ul>
+    <hr>
+
+    <h3 id="riwayat"> Riwayat Pendidikan </h3>
     <ol type = "a">
         <li> Saya TK dulu </li>
         <li> Lalu SD </li>
         <li> Lalu SMP</li>
     </ol>
-    <h3>Softskilss</h3>
+    <h3 id="Softskill">Softskilss</h3>
     <ul type = "Circle">
         <li> <i>High Curiosity</i></li>
         <li> Kolaborasi </li>
         <li> <i>Determined</i> </li>
     </ul>
 
-    <h3>Pengertian dari Softskills</h3>
+    <h3 id="defSoft">Pengertian dari Softskills</h3>
     <dl>
         <dt> <i>High Curiosity</i></dt>
         <dd> Rasa penasaran yang sangat tinggi membuat saya ingin terus mencoba hal baru</dd>
@@ -36,5 +51,73 @@
         <dd> Despite the pressure change, i still true to myself</dd>
     </dl>
 
+    <h3 id="Sos">My Social Media</h3>
+    <a href = "https://www.google.com">LinkedIn</a> <br>
+    <a href = "https://www.google.com">Instagram</a> <br>
+    <a href = "https://www.google.com">Github</a><br>
+
+    <!--ini kalo mau link tapi di new tab
+    target="_blank" (buat new tab)
+    target="_self" (Buat masih di tab yang sama)-->
+    <h3> My Projects</h3>
+    <a href = "My Project/halaman2.html" target="_blank">CLick Here</a>
+    
+    <!-- tabel
+     colspan = gabungin tabel
+     rowspan = gabungin baris-->
+    <h3 id = "organisasi"> ORGANISASI & KEPANITIAN </h3>
+    <table border = "1" cellspacing = "0" cellpadding = "5">
+        <thead>
+            <tr>
+                <th> No.</th>
+                <th> Organisasi</th>
+                <th>Jabatan</th>
+                <th>Tahun</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Kelompok Ilmiah Remaja (KIR)</td>
+                <td>Wakil Ketua Ekstrakurikuler</td>
+                <td>2023-2024</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Kelompok Ilmiah Remaja (KIR)</td>
+                <td>Ketua Ekstrakurikuler</td>
+                <td>2024-2025</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <h3 id = "masukkan">Ada masukkan?? Tolong isi ya !!</h3>
+    <form>
+        <label for = "nama">Nama (boleh inisial kok) : </label>
+        <input type="text" id="nama">
+            <br>
+        <label for ="pasword">Password(davisgantengs) : </label>
+        <input type="password" id="pasword">
+            <br>
+        <label for="masukan">Isi masukkan mengenai website disini ya! </label>
+        <input type="text" id="masukan">
+            <br>
+        <p>Berapa rating kamu untuk web ini</p>
+        <input type="radio" id="1" name="puas"><label for="1">1 (web ini terlalu suki)</label>
+        <input type="radio" id="2" name="puas"><label for="2">2 (kayak apa gitu apa kali)</label>
+        <input type="radio" id="3" name="puas"><label for="3">3 (ya okelahh)</label>
+        <input type="radio" id="4" name="puas"><label for="4">4 (aku suka ini web)</label>
+        <input type="radio" id="999" name="puas"><label for="999">999 (TERBAIKLAHH WEB INI, AKU GA TAHAN)</label>
+            <br>
+        <p>satu dua kata buat web ini</p>
+        <input type="checkbox" id="a"><label for="a">keren</label>
+        <input type="checkbox" id="b"><label for="b">okelha</label>
+        <input type="checkbox" id="c"><label for="c">suki</label>
+        <input type="checkbox" id="d"><label for="d">AHHHHHHH</label>
+            <br>
+        <input type="submit">
+    </form>
 </body>
 </html>
+`
