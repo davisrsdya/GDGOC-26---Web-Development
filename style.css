@@ -1,0 +1,31 @@
+:root {
+    --biru-muda: #c8f0ff;
+    --biru-cerah: #3498DB;
+    --biru-utama: #2563EB;
+    --biru-tua: #1E3A8A;
+    --navy: #0F172A;
+}
+
+* {
+    background-color: var(--biru-muda);
+}
+    
+.section1 {
+    min-height: 100vh;
+    background-image: url("bgbiru.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.section1 h1 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: #ffffff;
+}
+.divisi1{
+    background-color: transparent;
+}
+
