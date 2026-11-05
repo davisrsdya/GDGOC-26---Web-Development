@@ -255,4 +255,102 @@ body {
     line-height: 1.7;
 }
 
+.id-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    min-height: 550px;
+    padding: 50px 20px;
+
+    background-color: #F5F3EB;
+
+}
+.id-card {
+    width: 350px;
+    aspect-ratio: 1.6/1;
+
+    perspective: 1200px;
+
+    cursor: pointer;
+    filter: drop-shadow(12px 14px 0px rgba(0,0,0,0.25));
+}
+
+.id-card-inner {
+    position:relative;
+
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+.id-card-front,
+.id-card-back {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* EFEK CAHAYA */
+
+.id-card-front::after,
+.id-card-back::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.25),
+        transparent 40%,
+        rgba(0,0,0,0.08)
+    );
+
+    pointer-events: none;
+}
+
+.id-card-front img,
+.id-card-back img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: contain;
+}
+
+.id-card-back {
+    transform: rotateY(180deg);
+}
+
+.id-card.flipped .id-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* HOVER DEPAN */
+
+.id-card:hover:not(.flipped) .id-card-inner {
+    transform: rotateX(5deg) rotateY(-5deg) translateY(-8px);
+}
+
+/* HOVER BELAKANG */
+
+.id-card:hover.flipped .id-card-inner {
+    transform: rotateX(5deg) rotateY(175deg) translateY(-8px);
+}
+
+@media (max-width:480px) {
+    .id-card {
+        width: min(350px, 90vw);
+    }
+}

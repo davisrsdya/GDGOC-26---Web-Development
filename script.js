@@ -1,8 +1,17 @@
-function declaration() {
-    console.log("HAIIIII")
-}
+document.addEventListener("DOMContentLoaded", function() {
 
-declaration("HAIII")
+    const idCard = document.querySelector(".id-card");
+
+    idCard.addEventListener("click", function() {
+
+        idCard.classList.toggle("flipped");
+
+        console.log(idCard.className);
+
+    });
+
+});
+
 
 //ERROR HADLING
 //Teknik nangkap error otomatis, conbtoh bisa muncul notifikasi/dialihin ke yang lain
