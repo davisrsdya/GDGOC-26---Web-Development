@@ -202,7 +202,6 @@ body {
 
     min-width: 0;
     overflow: hidden;
-
     background-color: #FF7FA5;
 }
 
@@ -255,6 +254,14 @@ body {
     line-height: 1.7;
 }
 
+.jeedaw {
+    position: absolute;
+    width: 110%;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+}
+
 .id-section {
     display: flex;
     justify-content: center;
@@ -267,6 +274,8 @@ body {
 
 }
 .id-card {
+    position: absolute;
+    z-index: 2;
     width: 350px;
     aspect-ratio: 1.6/1;
 
@@ -279,8 +288,8 @@ body {
 .id-card-inner {
     position:relative;
 
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
 
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.3, 1);
@@ -298,27 +307,9 @@ body {
 
     overflow: hidden;
     border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.2);
 }
 
-/* EFEK CAHAYA */
 
-.id-card-front::after,
-.id-card-back::after {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    background: linear-gradient(
-        135deg,
-        rgba(255,255,255,0.25),
-        transparent 40%,
-        rgba(0,0,0,0.08)
-    );
-
-    pointer-events: none;
-}
 
 .id-card-front img,
 .id-card-back img {
@@ -340,7 +331,7 @@ body {
 /* HOVER DEPAN */
 
 .id-card:hover:not(.flipped) .id-card-inner {
-    transform: rotateX(5deg) rotateY(-5deg) translateY(-8px);
+    transform: rotateX(5deg) rotateY(-5deg) rotateZ(5deg) ;
 }
 
 /* HOVER BELAKANG */
