@@ -13,6 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+const contactBtn = document.getElementById("contactBtn");
+const contactList = document.getElementById("contactList");
+
+contactBtn.addEventListener("click", function() {
+
+    contactList.classList.toggle("active");
+
+});
+
+
+
 //ERROR HADLING
 //Teknik nangkap error otomatis, conbtoh bisa muncul notifikasi/dialihin ke yang lain
 
