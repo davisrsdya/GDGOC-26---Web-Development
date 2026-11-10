@@ -431,6 +431,11 @@ body {
     min-height: 390px;
 }
 
+.cardkecil:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0 black;
+}
+
 .text {
     text-align: center;
 
