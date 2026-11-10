@@ -22,6 +22,13 @@ const projects = {
             description: "An application to manage books and library records.",
             tags: ["Java", "Array"],
             image: "JAVA 03"
+        },
+
+        {
+            title: "Library Management",
+            description: "An application to manage books and library records.",
+            tags: ["Java", "Array"],
+            image: "JAVA 03"
         }
     ],
 
@@ -57,8 +64,115 @@ const projects = {
             tags: ["C++", "Logic"],
             image: "C++ 01"
         }
-    ]
+    ],
 
+    html: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    css: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    javascript: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    nodejs: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    express: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    mysql: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    firebase: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    git: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    github: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    vscode: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    netlify: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ],
+
+    unity: [
+        {
+            title: "TEST",
+            description: "TEST",
+            tags: ["TEST", "TEST"],
+            image: "IMG"
+        }
+    ]
 };
 
 
@@ -142,4 +256,4 @@ techButtons.forEach(button => {
 
 
 // TAMPILKAN JAVA SAAT HALAMAN PERTAMA DIBUKA
-showProjects("java");
+showProjects("");
