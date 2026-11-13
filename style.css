@@ -573,6 +573,25 @@ body {
     background-color: #D9D9D9;
 }
 
+.sectionGrid {
+    background-color: #F5F3EB;
+
+    padding: 70px 40px;
+    min-height: 700px;
+}
+
+.cobaGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.cardGrid {
+    background-color: #9BD67D;
+    border-radius: 30px;
+    border: 2px solid #111;
+}
+
 @media (max-width: 1100px) {
 
     .skills-container {
