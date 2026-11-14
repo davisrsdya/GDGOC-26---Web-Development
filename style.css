@@ -584,12 +584,46 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    margin-bottom: 50px;
 }
 
 .cardGrid {
+    padding: 20px 20px;
     background-color: #9BD67D;
     border-radius: 30px;
     border: 2px solid #111;
+}
+
+.cobaFlex {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.kiri {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardFlex {
+    border-radius: 30px;
+    border: 2px solid #111;
+    background-color: #A78BFA;
+    padding: 20px 20px;
+}
+
+.cardFlexKanan {
+    border-radius: 30px;
+    border: 2px solid #111;
+    background-color: #A78BFA;
+    padding: 20px 20px;
+    height: 101%;
+    transition: 0.75s ease;
+}
+
+.cardFlexKanan:hover {
+    transform: translateY(-10px);
 }
 
 @media (max-width: 1100px) {
